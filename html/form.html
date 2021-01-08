@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Register with us</h1>
+        <div class="form" >
+            <form name="myForm"  onsubmit="event.preventDefault(); validateForm()">
+                <div class="elements">
+                    <p>User Name</p>
+                    <input type="text" name="name" id="name" placeholder="Enter Username">
+                    <div class="hiddentext" id="hid1">Username must be at least 3 characters</div>  
+                </div>
+
+                <div class="elements">
+                    <p>Email</p>
+                    <input type="text" name="email" id="email" placeholder="Enter Email">
+                    <div class="hiddentext" id="hid2" >Email is not valid</div> 
+                </div>
+
+                <div class="elements">
+                    <p>Password</p>
+                    <input type="password" name="password" id="password" placeholder="Enter Password">
+                    <div class="hiddentext" id="hid3" > Password must be at least 6 Characters</div>
+                </div>
+                
+                <div class="elements">
+                    <p>Confirm Password</p>
+                    <input type="text" name="confirmpass" id="confirmpass" placeholder="Confirm Password">
+                    <div class="hiddentext" id="hid4" >Password doesn't match</div>
+                </div>
+                <div class="reset">
+                    <button type="submit" value="submit">Submit</button>
+                </div>
+        </form>
+            
+        </div>
+    </div>
+    <script src="../assets/js/valid.js"></script>
+</body>
+</html>
